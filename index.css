@@ -1,0 +1,203 @@
+:root {
+    --fondo: #E6EFF5;
+    --colorTitulo: #2AB3B1;
+    --colorSubtitulo: #C0DF33;
+    --colorDescripcion: #9AA7BE;
+    --colorTexto: #fff;
+    --colorFtitulo: #fff;
+    --fuente: 'Karla', sans-serif;
+    --colorFregistro: #2AB3B1;
+    --colorFboton: #C0DF33; 
+}
+
+/* Pantalla */
+
+.principal {
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Contenedor padre */
+.padre {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 83%;
+    margin-top: 72px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+    .padre {
+        width: 44%;
+    } 
+}
+
+
+/* Primer contenedor de informacion */
+.informacion {
+    background-color: var(--colorFtitulo);
+    padding: 28px 24px 32px 24px;
+    border-radius: 5px 5px 0 0;
+    font-family: var(--fuente);
+}
+
+@media screen and (min-width: 768px){
+    .informacion {
+        padding: 40px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+}
+
+.informacion h1 {
+    color: var(--colorTitulo);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.informacion h2 {
+    color: var(--colorSubtitulo);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 24px;
+    letter-spacing: -0.187px;
+    line-height: 20px;
+}
+
+.informacion p {
+    color: var(--colorDescripcion);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    letter-spacing: -0.175px;
+    line-height: 26px;
+}
+
+/* Segundo contenedor registro */
+
+.registro {
+    background-color: var(--colorFregistro);
+    padding: 24px;
+    font-family: var(--fuente);
+    color: var(--colorTexto);
+}
+
+@media screen and (min-width: 768px) {
+    .registro {
+        padding: 40px;
+    }
+}
+
+.registro h1 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+    margin-bottom: 18px;
+}
+
+.registro h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 4px;
+}
+
+.registro h2 .span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    letter-spacing: -0.2px;
+    opacity: 0.5;
+}
+.registro p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    letter-spacing: -0.2px;
+    margin-top: 4px;
+}
+
+.registro .boton {
+    font-family: var(--fuente);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    padding: 15px 102px 15px 102px;
+    border-radius: 5px;
+    background-color: var(--colorFboton);
+    border: none;
+    color: var(--colorTexto);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    width: 100%;
+    cursor: pointer;
+    margin-top: 26px;
+}
+
+@media screen and (min-width: 768px) {
+    .registro .boton {
+        font-size: 14px;
+    }
+    
+}
+
+/* Tercer contenedor About us */
+
+.nosotros {
+    padding: 24px 49px 24px 24px;
+    font-family: var(--fuente);
+    color: var(--colorTexto);
+    background-color: var(--colorFregistro);
+    opacity: 0.85;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.nosotros h1 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+}
+
+.nosotros p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.175px;
+    opacity: 0.75;
+    margin-bottom: 24px;
+}
+
+
+/* Segundo contenedor solo para responsive*/
+
+@media screen and (min-width: 768px) {
+    .segundoContenedor {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ 
+
